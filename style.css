@@ -104,7 +104,7 @@ h4 {
 }
 
 svg {
-  width: 20px;
+  width: 25px;
   cursor: pointer;
   color: var(--dark-color);
 }
@@ -178,11 +178,13 @@ svg {
   position: absolute;
   line-height: 1.5;
   padding: 1em;
-  box-shadow: 1px 1px 5px var(--secondary-dark-color);
+  box-shadow: 1px -1px 10px var(--white-color);
   width: max-content;
   border-radius: 5px;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
   display: none;
+  color: var(--white-color);
+  background-color: rgb(0, 0, 0, 0.4);
 }
 
 .navbar .wrapper .center .nav_list .list_item .options .option {
@@ -257,6 +259,62 @@ section.navbar {
 }
 
 /* <!--  ============ content section  =============== --> */
+.content {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.content .wrapper .context {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50dvh;
+  justify-content: center;
+}
+
+.content .wrapper{
+  position: relative;
+}
+
+.content .wrapper .context .text .title {
+  font-size: 60px;
+}
+
+.content .wrapper .context .text .para {
+  padding: 1em 0;
+  width: 90%;
+}
+
+.content .wrapper .context .text .title span {
+  color: #ffd700;
+}
+
+.content .wrapper  .brand {
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+.content .wrapper  .brand  ul{
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+
+.content .wrapper  .brand .icon svg {
+  border: 1px solid red;
+  width: 200px;
+}
+
+.content .wrapper .form_box{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 800px;
+  border: 1px solid yellow;
+}
+
+
 /* <!--  ============ trustpilot section  =============== --> */
 /* <!--  ============ brand section  =============== --> */
 /* <!--  ============ work section  =============== --> */

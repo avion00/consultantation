@@ -273,6 +273,7 @@ section.navbar {
   width: 55%;
   height: 500px;
   justify-content: center;
+  padding: 1em;
 }
 
 .content .wrapper {
@@ -334,6 +335,7 @@ section.navbar {
   box-shadow: -2px -2px 20px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   padding: 1em;
+  z-index: 100;
 }
 
 .content .wrapper .form_box {

@@ -5,19 +5,17 @@ listItemsWithOptions.forEach((item) => {
   const arrowIcon = item.querySelector(".icon svg");
 
   item.addEventListener("mouseenter", () => {
-    optionsList.style.display = "block"; 
-    arrowIcon.style.transform = "rotate(180deg)"; 
+    optionsList.style.display = "block";
+    arrowIcon.style.transform = "rotate(180deg)";
   });
 
   item.addEventListener("mouseleave", () => {
-    optionsList.style.display = "none"; 
-    arrowIcon.style.transform = "rotate(0deg)"; 
+    optionsList.style.display = "none";
+    arrowIcon.style.transform = "rotate(0deg)";
   });
 });
 
-
-
-// for drop down 
+// for drop down
 
 const optionMenus = document.querySelectorAll(".select-menu");
 
@@ -27,14 +25,14 @@ optionMenus.forEach((optionMenu) => {
   const options = optionMenu.querySelectorAll(".options .option");
 
   selectBtn.addEventListener("click", (event) => {
-    event.stopPropagation(); // Prevents the click event from bubbling up
+    event.stopPropagation();
     optionMenu.classList.toggle("active");
     console.log("Button clicked");
   });
 
   options.forEach((option) => {
     option.addEventListener("click", (event) => {
-      event.preventDefault(); // Prevents the default action of the anchor tag
+      event.preventDefault();
       let selectedOption = option.querySelector(".option-text").innerText;
       sBtn_text.innerText = selectedOption;
       console.log(selectedOption);
@@ -43,14 +41,26 @@ optionMenus.forEach((optionMenu) => {
     });
   });
 
-  // Add event listener to the document body
   document.body.addEventListener("click", (event) => {
-    // Check if the clicked element is not part of the select menu
     if (
       !optionMenu.contains(event.target) &&
       !selectBtn.contains(event.target)
     ) {
-      optionMenu.classList.remove("active"); // Hide the select menu
+      optionMenu.classList.remove("active");
     }
   });
+});
+
+// for about more section
+const iconSmallElements = document.querySelectorAll('.has-child .icon-small');
+
+iconSmallElements.forEach(iconSmall => {
+    iconSmall.addEventListener('click', function(e) {
+        e.preventDefault();
+        const content = this.parentElement.querySelector('.content');
+        content.classList.toggle('visible');
+        
+        const icon = this.querySelector('svg');
+        icon.classList.toggle('rotated');
+    });
 });

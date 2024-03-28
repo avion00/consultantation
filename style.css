@@ -11,8 +11,8 @@
   --border-color: #e5e8ec;
   --dark-color: #3f3f3f;
   --icon-color: #00c281;
-  --font-small: 13px;
-  --font-smaller: 11px;
+  --font-small: 15px;
+  --font-smaller: 13px;
 
   --percent100: 100%;
   --percent50: 50%;
@@ -302,6 +302,8 @@ section.navbar {
   width: 50%;
   color: var(--white-color);
   font-size: var(--font-small);
+  width: 100%;
+  font-weight: var(--fw5);
 }
 
 .content .wrapper .brand ul {
@@ -471,6 +473,7 @@ button {
 
 .select-menu .options .option {
   padding: 0.2em 0.5em;
+  font-weight: var(--fw5);
 }
 
 .select-menu .options .option:not(:last-child) {
@@ -559,7 +562,6 @@ button {
   background-color: #00c281;
 }
 
-
 .work .wrapper {
   display: flex;
   flex-direction: column;
@@ -594,12 +596,13 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s;
+  transition: all 0.3s;
 }
 
 .work .wrapper .wrap_box .box:hover {
-  transform: scale(1.03);
-  background-color: rgb(244, 250, 250);
+  transform: scale(1.05);
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
 .work .wrapper .wrap_box .box .title {
@@ -689,7 +692,7 @@ button {
 }
 
 .hs_2 {
-  padding: 0.5em;
+  padding: 2em 0.5em;
 }
 
 .hero_one {
@@ -719,7 +722,7 @@ button {
   display: flex;
   flex-direction: column;
   margin: 1em;
-  background-color: var(--white-color);
+  background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
@@ -769,7 +772,60 @@ button {
   text-align: center;
 }
 
-/* <!--  ============ money back section  =============== --> */
+/* <!--  ============ choose back section  =============== --> */
+.choose {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.choose .wrapper {
+  padding: 6em 1em;
+  border-top: solid var(--border-color);
+}
+
+.choose .title {
+  padding: 1em 0;
+}
+
+.choose .para {
+  padding: 1em;
+  font-size: var(--font-small);
+}
+
+.choose .choice {
+  margin: 0 20%;
+  padding: 1em;
+}
+
+.choose .choice .select-menu {
+  border: 1px solid #ffd700;
+  text-align: left;
+}
+
+.choose .btn button {
+  padding: 1em 3em;
+  margin: 1.5em 0;
+  width: 100%;
+  font: inherit;
+  font-size: var(--font-small);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.choose .btn button:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
 /* <!--  ============ testimonials section  =============== --> */
 /* <!--  ============ get client section  =============== --> */
 /* <!--  ============ videos review section  =============== --> */
@@ -796,6 +852,7 @@ button {
 
   position: relative;
   overflow: hidden;
+  color: var(--primary-color);
 }
 
 .type::before {
@@ -887,7 +944,6 @@ button {
 }
 
 .type .wrapper .wrap_box .box:hover {
-  /* color: rgb(255, 0, 0); */
   background-color: var(--primary-color);
   color: var(--white-color);
 }
@@ -897,6 +953,72 @@ button {
 }
 
 /* <!--  ============ more about section  =============== --> */
+
+.more_about {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 6em 20%;
+}
+
+.more_about .title {
+  font-size: 2em;
+  text-align: center;
+  font-weight: var(--fw5);
+  padding: 1em 2em;
+  line-height: 1.2;
+}
+.more_about .icon-small {
+  display: flex;
+  column-gap: 1em;
+  justify-content: space-between;
+  padding: 0.5em 0;
+  line-height: 1.2;
+  font-weight: var(--fw5);
+  text-transform: capitalize;
+  align-items: center;
+}
+
+.more_about .icon-small {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.more_about .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+  font-size: var(--font-smaller);
+  margin: 0.5em;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.more_about .content.visible {
+  max-height: 200vh;
+}
+
+.more_about .content li {
+  padding-left: 1.5em;
+  line-height: 1.5;
+  margin: 0.5em;
+}
+
+.more_about .content li a {
+  text-decoration: underline;
+}
+
+.more_about .content li a:hover {
+  opacity: 0.7;
+}
+
+.icon-small .icon svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-small .icon svg.rotated {
+  transform: rotate(180deg);
+}
+
 /* <!--  ============ choosing section  =============== --> */
 /* <!--  ============ latest articles section  =============== --> */
 /* <!--  ============ footer section  =============== --> */
@@ -961,7 +1083,6 @@ button {
 .footer_section .wrapper .col {
   max-width: 15%;
   width: fit-content;
-  /* border: 1px solid; */
 }
 
 .footer_section .wrapper.policy ul {
@@ -981,6 +1102,58 @@ button {
 }
 
 /* <!--  ============ footer end section =========== --> */
+
+/* ###################################*/
+/* #        About Us page            #*/
+/* ###################################*/
+
+.path {
+  padding: 2em 1em;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.path .dir {
+  display: flex;
+}
+
+.path .dir li:not(:last-child) {
+  opacity: 0.7;
+}
+
+.path .dir li:not(:last-child)::after {
+  content: "/";
+  padding: 0 0.3em;
+  opacity: 0.7;
+}
+
+.path .dir li:last-child {
+  opacity: 1;
+}
+
+.justice {
+  padding: 8em 2em;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.justice .wrapper .title {
+  margin: 0 20%;
+}
+
+.justice .wrapper .title h1 {
+  font-size: 34px;
+  font-weight: var(--fw6);
+  line-height: 1.2;
+}
+
+.justice .wrapper .para {
+  text-align: left;
+  margin: 1em 20%;
+  font-size: var(--font-small);
+}
+
 @media screen and (min-width: 992px) {
   .navbar .wrapper .right .mbl {
     display: none;
@@ -1106,6 +1279,18 @@ button {
     padding: 0 2em;
     width: 100%;
     margin-bottom: 1.5em;
+  }
+
+  .more_about {
+    padding: 5em 15%;
+  }
+
+  .more_about .title {
+    font-size: 1.5em;
+  }
+
+  .justice .wrapper .title {
+    margin: 0 10%;
   }
 }
 

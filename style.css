@@ -859,7 +859,7 @@ button {
   border-radius: 50%;
   z-index: -1;
   background: #75fb7e48;
-  box-shadow: 0 0 200px -15px rgba(157, 238, 161, 0.854); 
+  box-shadow: 0 0 200px -15px rgba(157, 238, 161, 0.854);
 }
 
 .type::after {
@@ -873,7 +873,7 @@ button {
   z-index: -1;
 
   background: #75fb7e48;
-  box-shadow: 0 0 200px -15px rgba(157, 238, 161, 0.854); 
+  box-shadow: 0 0 200px -15px rgba(157, 238, 161, 0.854);
 }
 
 .type .wrapper {
@@ -959,7 +959,7 @@ button {
   font-size: 2em;
   text-align: center;
   font-weight: var(--fw5);
-  padding: 1em 2em;
+  padding: 1em 0.2em;
   line-height: 1.2;
 }
 .more_about .icon-small {
@@ -1020,7 +1020,7 @@ button {
 /* ========= footer section ============== */
 .footer_section {
   background-color: var(--dark-color);
-    font-size: var(--font-small);
+  font-size: var(--font-small);
   padding: 2em 1em;
 }
 .footer_section .wrapper {
@@ -1032,8 +1032,8 @@ button {
   justify-content: space-around;
 }
 
-.footer_section .wrapper:not(:last-child){
-    border-bottom: 1px solid var(--border-color);
+.footer_section .wrapper:not(:last-child) {
+  border-bottom: 1px solid var(--border-color);
 }
 
 .footer_section
@@ -1043,7 +1043,6 @@ button {
   flex-direction: column;
   line-height: 1.8;
 }
-
 
 .footer_section .wrapper .col {
   width: min-content;
@@ -1078,16 +1077,15 @@ button {
   font-weight: var(--fw5);
 }
 
-.footer_section .wrapper .txt{
-  padding: .3em 3em;
+.footer_section .wrapper .txt {
+  padding: 0.3em 3em;
   text-align: center;
   cursor: pointer;
 }
 
-.footer_section .wrapper .txt:hover{
-  opacity: .8;
+.footer_section .wrapper .txt:hover {
+  opacity: 0.8;
 }
-
 
 .footer_section .wrapper .col {
   max-width: 15%;
@@ -1163,29 +1161,22 @@ button {
   font-size: var(--font-small);
 }
 
-
 /* ###################################*/
 /* #        FAQ page                 #*/
 /* ###################################*/
-.more_about.faq{
+.more_about.faq {
   padding: 0 23% !important;
   margin-bottom: 5em;
 }
 
-.more_about.faq .para{
+.more_about.faq .para {
   padding: 1em;
   text-align: center;
   font-size: var(--font-smaller);
 }
-.more_about.faq .has-child:first-child{
+.more_about.faq .has-child:first-child {
   margin-top: 1.5em;
 }
-
-
-
-
-
-
 
 @media screen and (min-width: 992px) {
   .navbar .wrapper .right .mbl {
@@ -1324,6 +1315,11 @@ button {
 
   .justice .wrapper .title {
     margin: 0 10%;
+  }
+
+  .more_about.faq {
+    padding: 0 5% !important;
+    margin-bottom: 5em;
   }
 }
 

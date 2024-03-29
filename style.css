@@ -1143,6 +1143,9 @@ button {
   text-align: center;
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .justice .wrapper .title {
@@ -1150,7 +1153,7 @@ button {
 }
 
 .justice .wrapper .title h1 {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: var(--fw6);
   line-height: 1.2;
 }

@@ -143,10 +143,11 @@ svg {
 .navbar .wrapper .center .nav_list {
   display: flex;
   justify-content: space-around;
-  column-gap: 1.2em;
+  column-gap: 1.1em;
   font-size: var(--font-small);
   align-items: center;
   line-height: 1.2;
+  width: max-content;
 }
 
 .navbar .wrapper .center .nav_list .list_item .icon {
@@ -1539,6 +1540,43 @@ button {
   padding:  1em;
   text-align: right;
 }
+
+
+/* ###################################*/
+/* #        testimonials page        #*/
+/* ###################################*/
+.testimonial .packets{
+  border: 0;
+  box-shadow: 0;
+}
+
+.testimonial .packets .packet{
+  display: flex;
+  border-radius: 0;
+  padding: 1em;
+  border: 0;
+  box-shadow: 0;
+  flex-direction: column;
+}
+
+.testimonial .packets .packet .profile{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+}
+
+.testimonial .packets .packet .image{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  object-position: ;
+}
+
+
+
+
+
+
 
 @media screen and (min-width: 992px) {
   .navbar .wrapper .right .mbl {

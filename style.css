@@ -1439,44 +1439,41 @@ button {
   border-radius: 50%;
 }
 
-.single_blog .context .left .personal .rght .icon.fb svg:hover{
-  color: #1877F2;
+.single_blog .context .left .personal .rght .icon.fb svg:hover {
+  color: #1877f2;
 }
 
-.single_blog .context .left .personal .rght .icon.x svg:hover{
+.single_blog .context .left .personal .rght .icon.x svg:hover {
   color: black;
 }
 
-.single_blog .context .left .personal .rght .icon.ln svg:hover{
-  color: #0A66C2;
+.single_blog .context .left .personal .rght .icon.ln svg:hover {
+  color: #0a66c2;
 }
 
-
-.single_blog .context .left .discription{
+.single_blog .context .left .discription {
   padding: 1em;
 }
 
-.single_blog .context .left .discription ul{
-  padding: .5em 0;
+.single_blog .context .left .discription ul {
+  padding: 0.5em 0;
 }
 
-.single_blog .context .left .discription ul li{
+.single_blog .context .left .discription ul li {
   padding-left: 1.3em;
   position: relative;
 }
 
-.single_blog .context .left .discription ul li::before{
+.single_blog .context .left .discription ul li::before {
   content: "";
   position: absolute;
-  top: .5em;
+  top: 0.5em;
   left: 0;
   width: 8px;
   height: 8px;
   rotate: 45deg;
   background: yellowgreen;
 }
-
-
 
 .single_blog .context .right {
   display: block;
@@ -1485,7 +1482,7 @@ button {
   align-self: flex-start;
 }
 
-.single_blog .context .right .box{
+.single_blog .context .right .box {
   background-color: var(--primary-color);
   color: var(--white-color);
   padding: 2em;
@@ -1494,34 +1491,34 @@ button {
   margin-top: 2em;
 }
 
-.single_blog .context .right .box .title{
+.single_blog .context .right .box .title {
   line-height: 1.2;
-  padding: .5em;
+  padding: 0.5em;
 }
 
-.single_blog .context .right .box .para{
+.single_blog .context .right .box .para {
   padding: 1em;
 }
 
-.single_blog .context .right .box .btn{
+.single_blog .context .right .box .btn {
   padding: 1em;
 }
 
-.single_blog .context .right .box .btn button{
-  padding: .8em 2em;
+.single_blog .context .right .box .btn button {
+  padding: 0.8em 2em;
   font: inherit;
   border-radius: 25px;
   font-size: var(--font-small);
-    font-weight: var(--fw6);
-    text-transform: capitalize;
-    transition: all .3s;
+  font-weight: var(--fw6);
+  text-transform: capitalize;
+  transition: all 0.3s;
 }
 
-.single_blog .context .right .box .btn button:hover{
-  background-color: #FFD700;
+.single_blog .context .right .box .btn button:hover {
+  background-color: #ffd700;
 }
 
-.single_blog .context .right .attach{
+.single_blog .context .right .attach {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1530,54 +1527,176 @@ button {
   border-radius: 0 0 10px 10px;
 }
 
-.single_blog .context .right .attach .icon svg{
+.single_blog .context .right .attach .icon svg {
   width: 80px;
   fill: var(--primary-color);
 }
 
-.single_blog .context .right .attach .txt{
+.single_blog .context .right .attach .txt {
   font-size: 22px;
   font-weight: var(--fw6);
-  padding:  1em;
+  padding: 1em;
   text-align: right;
 }
-
 
 /* ###################################*/
 /* #        testimonials page        #*/
 /* ###################################*/
-.testimonial .packets{
-  border: 0;
-  box-shadow: 0;
+
+.testimonial {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding-bottom: 6em;
 }
 
-.testimonial .packets .packet{
-  display: flex;
-  border-radius: 0;
+.testimonial .wrapper {
   padding: 1em;
-  border: 0;
-  box-shadow: 0;
-  flex-direction: column;
 }
 
-.testimonial .packets .packet .profile{
+.testimonial .title {
+  text-align: center;
+  padding: 1em;
+}
+.testimonial .title h1 {
+  font-size: 30px;
+  font-weight: var(--fw7);
+  text-transform: capitalize;
+}
+
+.testimonial .context .categories {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em 1em;
+}
+
+.testimonial .context .categories li:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.testimonial .context .categories li:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+.testimonial .wrapper .context {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial .context .categories li {
   border: 1px solid;
+  min-width: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3em 1em;
+  transition: all 0.3s ease-in-out;
+  font-weight: var(--fw5);
 }
 
-.testimonial .packets .packet .image{
-  width: 100px;
+.testimonial .context .categories li:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 1px solid var(--primary-color);
+}
+
+.testimonial .blog_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+.testimonial .blog_box .packets {
+  width: 32%;
+  min-width: 370px;
+  padding: 1em;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+}
+
+.testimonial .blog_box .packets .profile {
+  display: flex;
+  padding: 0.5em;
+  align-items: center;
+}
+
+.testimonial .blog_box .packets .profile .image {
   height: 100px;
-  object-fit: contain;
-  /* object-position: ; */
+  width: 100px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
+.testimonial .blog_box .packets .profile .image img {
+  height: var(--percent100);
+  width: var(--percent100);
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease-in-out;
+}
 
+.testimonial .blog_box .packets .profile .image img:hover {
+  transform: scale(1.1);
+}
 
+.testimonial .blog_box .packets .profile .name {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0.5em;
+}
 
+.testimonial .blog_box .packets .profile .name h2 {
+  font-size: 20px;
+  font-weight: var(--fw6);
+}
 
+.testimonial .blog_box .packets .profile .name .rate {
+  display: flex;
+}
 
+.testimonial .blog_box .packets .profile .name .rate .icon svg {
+  width: 15px;
+}
+
+.testimonial .blog_box .packets .date {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  column-gap: 0.5em;
+}
+
+.testimonial .blog_box .packets .date .icon {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial .blog_box .packets .discription .title {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: var(--fw5);
+  padding: 0.5em;
+}
+
+.testimonial .blog_box .packets .discription .para {
+  font-size: var(--font-smaller);
+  padding: 0.5em;
+}
+
+.testimonial .blog_box .packets .discription .btn {
+  padding: 0.5em 1em;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
+.testimonial .blog_box .packets .discription .btn:hover {
+  opacity: 0.6;
+  color: green;
+}
 
 @media screen and (min-width: 992px) {
   .navbar .wrapper .right .mbl {

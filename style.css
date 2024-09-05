@@ -129,6 +129,7 @@ svg {
   align-items: center;
   font-weight: var(--fw6);
   text-transform: uppercase;
+  filter: blur(3px);
 }
 
 .navbar .wrapper .left .logo .title {
@@ -291,6 +292,7 @@ section.navbar {
 .content .wrapper .context .text .title {
   font-size: 64px;
   line-height: 1.3;
+  filter: blur(8px);
 }
 
 .content .wrapper .context .text .para {
@@ -1034,6 +1036,7 @@ button {
   background-color: var(--dark-color);
   font-size: var(--font-small);
   padding: 2em 1em;
+  filter: blur(5px);
 }
 .footer_section .wrapper {
   display: flex;
